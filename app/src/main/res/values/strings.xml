@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BallotMania2</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity_best_picture">ActivityBestPicture</string>
+    <string name="title_activity_my_ballots">MyBallotsActivity</string>
+</resources>

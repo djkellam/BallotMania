@@ -1,0 +1,519 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <ScrollView android:id="@+id/ScrView" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+
+        <LinearLayout android:id="@+id/layoutForScroll" android:orientation="vertical"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Create A Ballot"
+                android:id="@+id/Title"
+                android:layout_gravity="center_horizontal"
+                android:textSize="40dp"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/BestPicture"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:text="HELLO"
+                android:paddingTop="30dp" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/BPicture"
+                android:layout_below="@+id/BestPicture"
+                android:layout_alignStart="@+id/LeadingActor"
+                android:spinnerMode="dialog"
+                android:background="#d3d3d3"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/LeadingActor"
+                android:layout_below="@+id/BPicture"
+                android:layout_alignStart="@+id/BPicture"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LActor"
+                android:layout_below="@+id/LeadingActor"
+                android:layout_alignStart="@+id/LeadingActor"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:spinnerMode="dialog" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/LeadingActress"
+                android:layout_below="@+id/LActor"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LActress"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/LeadingActress"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/SupportingActor"
+                android:layout_below="@+id/LActress"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SActor"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/LeadingActress"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/SupportingActress"
+                android:layout_below="@+id/SActor"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SActress"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/SupportingActress"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/AnimatedFilm"
+                android:layout_below="@+id/SActress"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/AFilm"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/AnimatedFilm"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/Cinematography"
+                android:layout_below="@+id/AFilm"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Cinema"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/Cinematography"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/CostumeDesign"
+                android:layout_below="@+id/Cinema"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CDesign"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/CostumeDesign"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/Directing"
+                android:layout_below="@+id/CDesign"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Direct"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/Directing"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/DocumentaryFeature"
+                android:layout_below="@+id/Direct"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/DFeature"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/DocumentaryFeature"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/DocumentaryShortSubject"
+                android:layout_below="@+id/DFeature"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/DSSubject"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/DocumentaryShortSubject"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/FilmEditing"
+                android:layout_below="@+id/DSSubject"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/FEditing"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/FilmEditing"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/ForeignLanguageFilm"
+                android:layout_below="@+id/FEditing"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/FLFilm"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/ForeignLanguageFilm"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/MakeupAndHairstyling"
+                android:layout_below="@+id/FLFilm"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/MAHairstyling"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/MakeupAndHairstyling"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/MusicOriginalScore"
+                android:layout_below="@+id/MAHairstyling"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/MOScore"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/MusicOriginalScore"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/MusicOriginalSong"
+                android:layout_below="@+id/MOScore"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/MOSong"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/MusicOriginalSong"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/ProductionDesign"
+                android:layout_below="@+id/MOSong"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/PDesign"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/ProductionDesign"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/ShortFilmAnimated"
+                android:layout_below="@+id/PDesign"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SFAnimated"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/ShortFilmAnimated"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/ShortFilmLiveAction"
+                android:layout_below="@+id/SFAnimated"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SFLAction"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/ShortFilmLiveAction"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/SoundEditing"
+                android:layout_below="@+id/SFLAction"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SEditing"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/SoundEditing"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/SoundMixing"
+                android:layout_below="@+id/SEditing"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SMixing"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/SoundMixing"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/VisualEffects"
+                android:layout_below="@+id/SMixing"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/VEffects"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/VisualEffects"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/WritingAdaptedScreenplay"
+                android:layout_below="@+id/VEffects"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/WAScreenplay"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/WritingAdaptedScreenplay"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/WritingOriginalScreenplay"
+                android:layout_below="@+id/WAScreenplay"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:text="HELLO" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/WOScreenplay"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/WritingOriginalScreenplay"
+                android:paddingTop="10dp"
+                android:background="#d3d3d3"
+                android:layout_alignParentLeft="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/Submit"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/WOScreenplay"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
